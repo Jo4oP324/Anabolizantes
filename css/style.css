@@ -316,6 +316,10 @@ ul.style .first {
     padding-right: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #nav>ul>li>a,
 #nav>ul>li>span {
     display: block;
@@ -477,6 +481,31 @@ ul.style .first {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
+nav {
+    background-color: var(--primary-color-light); /* cor de fundo escura */
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+  }
+  
+  nav a:hover {
+    background-color: var(--text-primary);
+    transform: scale(1.05);
+  }
+  
 
 .mensagem-container__botao {
     background-color: var(--accent-color);
@@ -645,6 +674,15 @@ map area:hover {
     #content section img {
         height: auto;
     }
+    nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
 }
 
 @media (max-width: 480px) {
