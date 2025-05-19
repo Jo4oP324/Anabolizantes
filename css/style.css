@@ -489,6 +489,46 @@ ul.style .first {
     transition: background-color 0.3s ease;
 }
 
+.card-destaque {
+    background-color: #f4f8fb;
+    border-left: 6px solid #007BFF;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: all .3s ease;
+    margin-bottom: 20px;
+}
+
+.card-destaque:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transform: scale(1.05);
+}
+
+.card-destaque h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-destaque ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-destaque li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444;
+}
+
+.card-destaque li i {
+    color: #007BFF;
+    margin-right: 8px;
+}
+
+
 .mensagem-container__botao:hover {
     background-color: var(--accent-color-dark);
 }
